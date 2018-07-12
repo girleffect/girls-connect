@@ -49,13 +49,9 @@ ol, ul {
   &_call {
     background-color: #46b59d;
   }
-
-  @media (min-width: 30.000em) { //480
-  }
-  @media (min-width: 48.000em) { //768
-  }
-  @media (min-width: 64.000em) { //1024
-  }
+  @media (min-width: 30.000em) { /* 480 */}
+  @media (min-width: 48.000em) { /* 768 */}
+  @media (min-width: 64.000em) { /* 1024 */}
 }
 .wrapper {
   height: 100%;
@@ -69,16 +65,10 @@ ol, ul {
   @media (min-width: 64.000em) { //1024
     padding: 0 15% 0;
   }
-  p {
-    margin: 0;
-  }
 }
 .header {
   display: flex;
   padding-top: 1em;
-  @media (min-width: 64.000em) { //1024
-    position: absolute;
-  }
 }
 .logo {
   width: 30%;
@@ -86,7 +76,7 @@ ol, ul {
     display: block;
   }
   &__graphic {
-    width: 90%;
+    width: 70%;
     height: auto;
   }
 }
@@ -127,6 +117,7 @@ ol, ul {
         background: url('/static/images/menu-underline.png') no-repeat center center/ 80%;
         content: " ";
         display: block;
+        margin: 0 auto;
         height: 0.8em;
         width: 3.0em;
       }
@@ -217,7 +208,7 @@ ol, ul {
   text-align: center;
   padding: 0;
   @media (min-width: 64.000em) { //1024
-    padding: 15% 0 0;
+    padding: 5% 0 0;
   }
   &-list {
     padding: 0 5%;
@@ -234,6 +225,14 @@ ol, ul {
       font-family: 'Typ1451-Bold', sans-serif;
       font-weight: 700;
       padding: 1em 0;
+      &--inline {
+        display: inline-block;
+      }
+    }
+    &__date {
+      display: block;
+      font-style: italic;
+      padding: 0.5em 0;
     }
   }
   &__inner {
@@ -274,6 +273,7 @@ ol, ul {
     }
   }
 }
+
 .footer {
   background: #ffffff;
   border-top: 1px solid #ecedef;
