@@ -67,7 +67,7 @@ ol, ul {
   margin: 0 auto;
   overflow: auto;
   @media (min-width: 64.000em) { //1024
-    padding: 0 13% 0;
+    padding: 0 15% 0;
   }
   p {
     margin: 0;
@@ -157,7 +157,7 @@ ol, ul {
       color: #8a2451;
       padding: 0 10%;
       &:after {
-        background: url('/static/images/menu-underline.png')  no-repeat center center/ 80%;
+        background: url('/static/images/menu-underline.png')  no-repeat center center/ 70%;
         content: " ";
         display: block;
         margin: 0 auto;
@@ -169,6 +169,9 @@ ol, ul {
       color: #8a2451;
       font-family: 'Typ1451-Bold', sans-serif;
       display: block;
+    }
+    &--lead {
+      color: #8a2451;
     }
   }
   &__subtitle {
@@ -214,8 +217,41 @@ ol, ul {
   text-align: center;
   padding: 0;
   @media (min-width: 64.000em) { //1024
-    padding: 13% 0 0;
+    padding: 15% 0 0;
   }
+  &-list {
+    padding: 0 5%;
+    text-align: center;
+    &__item {
+      list-style-type: none;
+      margin: 1em 0;
+    }
+    &__link {
+      color: #8a2451;
+    }
+    &__topic {
+      display: block;
+      font-family: 'Typ1451-Bold', sans-serif;
+      font-weight: 700;
+      padding: 1em 0;
+    }
+  }
+  &__inner {
+    width: 100%;
+    margin: 0 auto;
+    @media (min-width: 64.000em) { //1024
+      width: 53.250em;
+    }
+  }
+  &__hero-image {
+    width: 100%;
+    height: auto;
+    @media (min-width: 64.000em) { //1024
+      width: auto;
+    }
+  }
+}
+.sponsors {
   &-list {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -229,32 +265,18 @@ ol, ul {
       list-style-type: none;
       place-self: center;
     }
-  }
-  &__inner {
-    width: 100%;
-    margin: 0 auto;
-    @media (min-width: 64.000em) { //1024
-      width: 53.250em;
+    &__thumbnail {
+      width: 80%;
+      height: auto;
+      @media (min-width: 48.000em) { //1024
+        width: 65%;
+      }
     }
   }
-  &__thumbnail {
-    width: 80%;
-    height: auto;
-    @media (min-width: 48.000em) { //1024
-      width: 65%;
-    }
-  }
-  &__hero-image {
-    width: 100%;
-    height: auto;
-    @media (min-width: 64.000em) { //1024
-      width: auto;
-    }
-  }
-
 }
 .footer {
   background: #ffffff;
+  border-top: 1px solid #ecedef;
   color: #a3a7ae;
   font-size: 0.812em;
   padding: 0 10%;
