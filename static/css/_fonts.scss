@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'dk_bocadilloregular';
+    src: url('/static/fonts/DKBocadillo/dk_bocadillo-webfont.woff2') format('woff2'),
+         url('/static/fonts/DKBocadillo/dk_bocadillo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Typ1451-Bold';
+    src: url('/static/fonts/Typ14/bold/Typ1451-Bold.woff2') format('woff2'),
+        url('/static/fonts/Typ14/bold/Typ1451-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Typ1451-Medium';
+    src: url('/static/fonts/Typ14/medium/Typ1451-Medium.woff2') format('woff2'),
+        url('/static/fonts/Typ14/medium/Typ1451-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'PoplarStd';
+  src: url('/static/fonts/PoplarStd/PoplarStd.woff2') format('woff2'),
+      url('/static/fonts/PoplarStd/PoplarStd.woff')  format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
