@@ -37,6 +37,10 @@ ol, ul {
   padding: 0;
 }
 
+img {
+  vertical-align: middle;
+}
+
 //SECTIONS
 /*
   MEDIA QUERIES CASCADE: TOP TO BOTTOM
@@ -135,20 +139,16 @@ ol, ul {
     font-family: 'PoplarStd', sans-serif;
     font-weight: lighter;
     text-transform: uppercase;
-    padding: 0 5%;
     @media (min-width: 48.000em) { //768
-      padding: 0 10%;
       font-size: 3.375em;
     }
     @media (min-width: 64.000em) { //1024
-      padding: 0 28%;
       font-size: 4.375em;
     }
     &--secondary {
       color: #8a2451;
-      padding: 0 10%;
       &:after {
-        background: url('/static/images/menu-underline.png')  no-repeat center center/ 70%;
+        background: url('/static/images/menu-underline.png')  no-repeat center center/ 40%;
         content: " ";
         display: block;
         margin: 0 auto;
@@ -166,16 +166,10 @@ ol, ul {
     }
   }
   &__subtitle {
-    padding: 1em 0;
+    padding: 1em 15%;
     &--secondary {
       font-size: 1.250em;
-      padding: 5% 0 0;
-      @media (min-width: 48.000em) { //768
-        padding: 5% 0 0;
-      }
-      @media (min-width: 64.000em) { //1024
-        padding: 10% 0 0;
-      }
+      padding: 1em 15%;
     }
   }
   &__caption {
@@ -193,7 +187,7 @@ ol, ul {
 }
 
 .caption {
-  padding: 20% 0 0;
+  padding-bottom: 5%;
   &__wrapper {
     background: url('/static/images/speach-bubble.png') no-repeat center center/ 100%;
     display: grid;
@@ -206,9 +200,8 @@ ol, ul {
 
 .content {
   text-align: center;
-  padding: 0;
   @media (min-width: 64.000em) { //1024
-    padding: 5% 0 0;
+    padding: 1em 0 0;
   }
   &-list {
     padding: 0 5%;
