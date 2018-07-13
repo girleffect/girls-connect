@@ -54,6 +54,7 @@ img {
     background-color: #46b59d;
   }
   @media (min-width: 30.000em) { /* 480 */}
+  @media (min-width: 38.125em) { /* 610 */}
   @media (min-width: 48.000em) { /* 768 */}
   @media (min-width: 64.000em) { /* 1024 */}
 }
@@ -174,10 +175,22 @@ img {
   }
   &__caption {
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 0.67em;
     font-family: 'dk_bocadilloregular', sans-serif;
     text-transform: uppercase;
-    padding: 10% 20%;
+    padding: 20%;
+    @media (min-width: 38.125em) { /* 610 */
+      font-size: 1em;
+      padding: 25% 20%;
+    }
+    @media (min-width: 48.000em) { /* 768 */
+      font-size: 1.2em;
+      padding: 20%;
+    }
+    @media (min-width: 64.000em) { /* 1024 */
+      font-size: 1.5em;
+      padding: 15% 20%;
+    }
     &--highlight {
       font-family: 'PoplarStd', sans-serif;
       font-size: 1.5em;
@@ -191,8 +204,8 @@ img {
   &__wrapper {
     background: url('/static/images/speach-bubble.png') no-repeat center center/ 100%;
     display: grid;
-    width: 650px;
-    height: 400px;
+    width: 75%;
+    height: auto;
     margin: 0 auto 5%;
     text-align: center;
   }
@@ -257,12 +270,12 @@ img {
       list-style-type: none;
       place-self: center;
     }
-    &__thumbnail {
-      width: 80%;
-      height: auto;
-      @media (min-width: 48.000em) { //1024
-        width: 65%;
-      }
+  }
+  &__thumbnail {
+    width: 80%;
+    height: auto;
+    @media (min-width: 48.000em) { //1024
+      width: 65%;
     }
   }
 }
