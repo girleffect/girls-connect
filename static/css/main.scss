@@ -167,10 +167,16 @@ img {
     }
   }
   &__subtitle {
-    padding: 1em 15%;
-    &--secondary {
-      font-size: 1.250em;
+    padding: 1em;
+    @media (min-width: 48.000em) {
       padding: 1em 15%;
+    }
+    &--secondary {
+      padding: 1em;
+      @media (min-width: 48.000em) {
+        font-size: 1.250em;
+        padding: 1em 15%;
+      }
     }
   }
   &__caption {
@@ -178,7 +184,7 @@ img {
     font-size: 0.67em;
     font-family: 'dk_bocadilloregular', sans-serif;
     text-transform: uppercase;
-    padding: 20%;
+    padding: 8%;
     @media (min-width: 38.125em) { /* 610 */
       font-size: 1em;
       padding: 25% 20%;
@@ -202,12 +208,17 @@ img {
 .caption {
   padding-bottom: 5%;
   &__wrapper {
-    background: url('/static/images/speach-bubble.png') no-repeat center center/ 100%;
-    display: grid;
+    background: #A01E57;
+    border-radius: 10%;
     width: 100%;
-    height: auto;
-    margin: 0 auto 5%;
+    margin: 0 auto 1em;
     text-align: center;
+    @media (min-width: 38.125em) {
+      background: url('/static/images/speach-bubble.png') no-repeat center center/ 100%;
+      display: grid;
+      height: auto;
+      margin: 0 auto 5%;
+    }
     @media (min-width: 48.000em) { /* 768 */
       width: 75%;
     }
@@ -255,15 +266,12 @@ img {
   &__hero-image {
     width: 100%;
     height: auto;
-    @media (min-width: 64.000em) { //1024
-      width: auto;
-    }
   }
 }
 .sponsors {
   &-list {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     padding: 10% 0;
     text-align: center;
