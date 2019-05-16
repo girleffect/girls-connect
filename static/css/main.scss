@@ -129,6 +129,15 @@ img {
     font-weight: bold;
     font-style: italic;
   }
+  .content-list__link {
+    color: #8a2451;
+    font-size: 20px;
+    text-underline-position: below;
+    font-family: 'Typ1451-Medium', sans-serif;
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 
 .header {
