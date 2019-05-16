@@ -60,20 +60,20 @@ img {
   }
 }
 .np-message {
-  padding: 25px 15% 5%;
+  padding: 25px 10% 5%;
   text-align: center;
   width: 100%;
   position: sticky;
-  bottom: -110px;
   z-index: 20;
-
-  //-webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
-  //box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  @media (min-width: 48.000em) { //768
+    padding: 25px 15% 5%;
+    bottom: -110px;
+  }
   .heading {
     color: #8a2451;
     &__main-title  {
       font-family: 'PoplarStd', sans-serif;
-      font-size: 52px;
+      font-size: 41px;
       line-height: 1;
       margin-block-start: 16px;
       &::before {
@@ -93,7 +93,7 @@ img {
     &__title {
       color: #8a2451;
       font-family: 'PoplarStd', sans-serif;
-      font-size: 47px;
+      font-size: 32px;
       line-height: 1;
       margin-block-end: 16px;
       @media (min-width: 48.000em) { //768
@@ -108,12 +108,15 @@ img {
       margin-block-start: 16px;
     }
     &__description {
-      font-size: 18px;
+      font-size: 16px;
+      @media (min-width: 48.000em) { //768
+        font-size: 18px;
+      }
     }
   }
   .ussd-line {
     font-family: 'Typ1451-Medium', sans-serif;
-    font-size: 52px;
+    font-size: 32px;
     font-weight: bold;
     @media (min-width: 48.000em) { //768
       font-size: 65px;
