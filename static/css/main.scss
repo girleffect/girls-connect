@@ -66,6 +66,7 @@ img {
   position: sticky;
   bottom: -110px;
   z-index: 20;
+
   //-webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
   //box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
   .heading {
@@ -182,40 +183,6 @@ img {
         height: 0.8em;
         width: 3.0em;
       }
-    }
-  }
-}
-
-#screen {
-  &_home {
-    background-color: #f9c623;
-    .np-message {
-      background: rgba(#f9c623,1);
-      .ussd-line {
-        color: #fff;
-      }
-    }
-  }
-  &_call {
-    background-color: #46b59d;
-    .np-message {
-      background: rgba(#46b59d, 1);
-      .heading {
-        &__subtitle, &__description {
-          color: #fff;
-        }
-      }
-    }
-  }
-  &_about .section {
-    margin: -25px auto 0;
-  }
-  &_privacy .section {
-    margin: -10px auto 0;
-  }
-  &_about, &_faqs, &_privacy, &_terms {
-    .np-message {
-      background: #fff;
     }
   }
 }
@@ -387,6 +354,42 @@ img {
 #nine_mobile {
   width: 55%;
 }
+
+#screen {
+  &_home {
+    background-color: #f9c623;
+    .np-message {
+      background: rgba(#f9c623,1);
+      .ussd-line {
+        color: #fff;
+      }
+    }
+  }
+  &_call {
+    background-color: #46b59d;
+    .np-message {
+      background: rgba(#46b59d, 1);
+      .heading {
+        &__subtitle, &__description {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &_about .content {
+    margin: -25px auto 0;
+  }
+  &_privacy .content {
+    margin: -10px auto 0;
+  }
+  &_about, &_faqs, &_privacy, &_terms {
+    .np-message {
+      background: #fff;
+    }
+  }
+}
+
+
 .footer {
   background: #ffffff;
   border-top: 1px solid #ecedef;
