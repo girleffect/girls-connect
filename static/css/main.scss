@@ -46,88 +46,6 @@ img {
   MEDIA QUERIES CASCADE: TOP TO BOTTOM
 */
 /*-----------------------------------------------------*/
-
-.np-message {
-  padding: 2em 15% 5%;
-  text-align: center;
-  width: 100%;
-  position: sticky;
-  bottom: -455px;
-  z-index: 20;
-  //-webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
-  //box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
-  .heading {
-    color: #8a2451;
-    &__main-title  {
-      font-family: 'PoplarStd', sans-serif;
-      font-size: 70px;
-      line-height: 1;
-      margin-block-start: 19.92px;
-      &::before {
-        content: "";
-        display: block;
-        width: 50%;
-        margin: 5% auto;
-        border-top: 5px solid #8a2451;
-      }
-    }
-    &__title {
-      color: #8a2451;
-      font-family: 'PoplarStd', sans-serif;
-      font-size: 52px;
-      line-height: 1;
-      margin-block-end: 19.92px;
-    }
-    &__subtitle  {
-      font-size: 20px;
-      margin-block-start: 19.92px;
-    }
-    &__description {
-      font-size: 18px;
-    }
-  }
-  .ussd-line {
-    font-family: 'Typ1451-Medium', sans-serif;
-    font-size: 70px;
-    font-weight: bold;
-  }
-  .character__name {
-    font-weight: bold;
-    font-style: italic;
-  }
-}
-
-#screen {
-  &_home {
-    background-color: #f9c623;
-    .np-message {
-      background: rgba(#f9c623,1);
-      .ussd-line {
-        color: #fff;
-      }
-    }
-  }
-  &_call {
-    background-color: #46b59d;
-    .np-message {
-      background: rgba(#46b59d, 1);
-      .heading {
-        &__subtitle, &__description {
-          color: #fff;
-        }
-      }
-    }
-  }
-  &_about, &_faqs, &_privacy, &_terms {
-    .np-message {
-      background: #fff;
-    }
-  }
-  @media (min-width: 30.000em) { /* 480 */}
-  @media (min-width: 38.125em) { /* 610 */}
-  @media (min-width: 48.000em) { /* 768 */}
-  @media (min-width: 64.000em) { /* 1024 */}
-}
 .wrapper {
   height: 100%;
   margin: 0 auto;
@@ -141,6 +59,74 @@ img {
     padding: 0 15% 0;
   }
 }
+.np-message {
+  padding: 25px 15% 5%;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  bottom: -110px;
+  z-index: 20;
+  //-webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  //box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  .heading {
+    color: #8a2451;
+    &__main-title  {
+      font-family: 'PoplarStd', sans-serif;
+      font-size: 52px;
+      line-height: 1;
+      margin-block-start: 16px;
+      &::before {
+        content: "";
+        display: block;
+        width: 50%;
+        margin: 0 auto 25px;
+        border-top: 5px solid #8a2451;
+      }
+      @media (min-width: 48.000em) { //768
+        font-size: 65px;
+      }
+      @media (min-width: 64.000em) { //1024
+        font-size: 70px;
+      }
+    }
+    &__title {
+      color: #8a2451;
+      font-family: 'PoplarStd', sans-serif;
+      font-size: 47px;
+      line-height: 1;
+      margin-block-end: 16px;
+      @media (min-width: 48.000em) { //768
+        font-size: 47px;
+      }
+      @media (min-width: 64.000em) { //1024
+        font-size: 52px;
+      }
+    }
+    &__subtitle  {
+      font-size: 20px;
+      margin-block-start: 16px;
+    }
+    &__description {
+      font-size: 18px;
+    }
+  }
+  .ussd-line {
+    font-family: 'Typ1451-Medium', sans-serif;
+    font-size: 52px;
+    font-weight: bold;
+    @media (min-width: 48.000em) { //768
+      font-size: 65px;
+    }
+    @media (min-width: 64.000em) { //1024
+      font-size: 70px;
+    }
+  }
+  .character__name {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
 .header {
   display: flex;
   padding-top: 1em;
@@ -196,11 +182,48 @@ img {
         height: 0.8em;
         width: 3.0em;
       }
-      &:active, &:hover, &:focus {}
-      &:visited {}
     }
   }
 }
+
+#screen {
+  &_home {
+    background-color: #f9c623;
+    .np-message {
+      background: rgba(#f9c623,1);
+      .ussd-line {
+        color: #fff;
+      }
+    }
+  }
+  &_call {
+    background-color: #46b59d;
+    .np-message {
+      background: rgba(#46b59d, 1);
+      .heading {
+        &__subtitle, &__description {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &_about .section {
+    margin: -25px auto 0;
+  }
+  &_privacy .section {
+    margin: -10px auto 0;
+  }
+  &_about, &_faqs, &_privacy, &_terms {
+    .np-message {
+      background: #fff;
+    }
+  }
+  @media (min-width: 30.000em) { /* 480 */}
+  @media (min-width: 38.125em) { /* 610 */}
+  @media (min-width: 48.000em) { /* 768 */}
+  @media (min-width: 64.000em) { /* 1024 */}
+}
+
 
 .intro {
   color: #ffffff;
